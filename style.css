@@ -128,7 +128,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0.5vw;
+
     background-color: #CCCCCC;
     box-shadow: 0px 0px 10px #888888;
 }
@@ -137,17 +137,17 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0.5vw;
+    
 }
     
 .filter-button {
-    height: 5vh;
+    height: 4.2vh;
     background-color: #26AA49;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.5vw;
+    margin: 0.3vw 0.20vw;
     font-family: 'Raleway', sans-serif;
     font-style: italic;
     text-align: center;
@@ -189,43 +189,77 @@ a {
 
 .card {
     display: flex;
-    width: 80%;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 10px #888888;
-    border-radius: 5px;
-    margin: 1vw;
-    overflow: hidden;
-  }
-  
-  .card-img {
-    width: 30%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .card-content {
-    width: 70%;
-    padding: 1vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 25vh;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
   }
   
-  .card-title {
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 0.5vw;
-  }
+.card img {
+width: 30%;
+height: 100%;
+padding: 1em;
+}
+
+.card-text {
+width: 70%;
+padding-left: 1em;
+}
+
+.card-title {
+font-family: 'Raleway', sans-serif;
+font-style: italic;
+font-size: 1.5em;
+margin-bottom: 0.5em;
+}
+
+.card-subtitle {
+font-family: 'Raleway', sans-serif;
+font-style: italic;
+font-size: 1em;
+text-align: center;
+margin-bottom: 1em;
+}
+
+.rating {
+display: flex;
+justify-content: space-between;
+margin-bottom: 1em;
+}
+
+.rating-note {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+.rating-title {
+font-size: 1em;
+}
+
+.card-tags {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+}
   
-  .card-subtitle {
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    text-align: center;
-    font-size: 1em;
-    color: #AAAAAA;
-  }
+.card-tag {
+background-color: green;
+color: white;
+padding: 0.5em 1em;
+border-radius: 1em;
+margin-right: 0.5em;
+margin-bottom: 0.5em;
+font-size: 1em;
+cursor: pointer;
+text-align: center;
+transition: all 0.3s;
+}
+  
+.card-tag:hover {
+    background-color: darkgreen;
+}
